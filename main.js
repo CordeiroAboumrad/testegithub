@@ -8,7 +8,16 @@
 
 
 function clicando(){
-    alert("Obrigado por clicar. Até a próxima!");
+//    alert("Obrigado por clicar. Até a próxima!");
+    document.getElementById("agradecimento").innerHTML = "Obrigado por clicar!";
+    window.open("https://www.youtube.com/");
+}
+
+
+function redirecionar(){
+
+    window.open("https://www.youtube.com/");
+
 }
 
 
@@ -18,7 +27,7 @@ function clicando(){
 // lista.push("uva");
 // console.log(lista.length);
 // 
-console.log(lista.reverse());
+//console.log(lista.reverse());
 // 
 // console.log(lista.reverse().join(" - ")); 
 
