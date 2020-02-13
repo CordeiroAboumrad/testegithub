@@ -13,13 +13,47 @@ function clicando(){
     window.open("https://www.youtube.com/");
 }
 
+function clicando2(){
+    alert("Clique alternativo. Funcionalidade oculta ativada.");
+    document.getElementById("agradecimento2").innerHTML = "Obrigado por clicar no botão alternativo!";
+}
+
+function trocadinha(elemento){
+    elemento.innerHTML = "SAI DE CIMA DE MIM!";
+}
+
+function voltando(elemento){
+    elemento.innerHTML = "Obrigado por clicar!";
+}
+
 
 function redirecionar(){
 
-    window.open("https://www.youtube.com/");
+    window.location.href = "https://www.fluminense.com.br";
 
 }
 
+function funcaoChange(elemento){
+    console.log(elemento.value);
+
+    switch(elemento.value){
+        case "1":
+            alert("O elemento clicado foi o primeiro.");
+            break;
+        
+        case "2":
+            alert("O elemento clicado foi o segundo.");
+            break;
+        
+        case "3":
+            alert("O elemento clicado foi o terceiro.");
+            break;
+
+        default:
+            alert("Opção inválida. Tente novamente.");
+        
+    }
+}
 
 
 
